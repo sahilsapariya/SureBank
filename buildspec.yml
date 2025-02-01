@@ -1,0 +1,29 @@
+version: 0.2
+
+env:
+  variables:
+    ENVIRONMENT: 'production'
+    LOG_LEVEL: 'info'
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 18 # Adjust Node.js version as needed
+    commands:
+      - echo "Installing dependencies..."
+      - npm install
+
+  build:
+    commands:
+      - echo "Building Next.js app..."
+      - npm run build
+
+  post_build:
+    commands:
+      - echo "Syncing with S3..."
+      - aws s3 sync out/ s3://mindlooom-frontend/ --delete
+      - aws cloudfront create-invalidation --distribution-id E3MN6994CGP491 --paths "/*"
+
+artifacts:
+  files:
+    - '**/*'

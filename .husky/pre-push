@@ -1,0 +1,11 @@
+#!/bin/sh
+
+# Get the name of the current branch
+BRANCH_NAME=$(git symbolic-ref --short HEAD)
+
+# Restrict pushing to develop and master
+if [ "$BRANCH_NAME" = "develop" ] || [ "$BRANCH_NAME" = "master" ]; then
+  echo "🚫 Pushing directly to '$BRANCH_NAME' is not allowed."
+  echo "Please use a feature or hotfix branch and create a pull request instead."
+  exit 1
+fi
