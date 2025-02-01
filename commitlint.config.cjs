@@ -10,10 +10,10 @@ module.exports = {
   plugins: [
     {
       rules: {
-        "ml-prefix": (parsed) => {
+        "bcw-prefix": (parsed) => {
           const { subject } = parsed;
-          if (!subject.startsWith("ML-")) {
-            return [false, "Subject must start with 'ML-'"];
+          if (!subject.startsWith("BCW-")) {
+            return [false, "Subject must start with 'BCW-'"];
           }
           return [true];
         },

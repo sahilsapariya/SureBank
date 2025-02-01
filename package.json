@@ -1,5 +1,5 @@
 {
-  "name": "surebank-frontend",
+  "name": "surebank",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,8 +9,7 @@
     "lint": "next lint --fix .",
     "prepare": "husky",
     "test": "jest",
-    "test:watch": "jest --watch",
-    "test:staged": "./.husky/test-staged.sh"
+    "test:watch": "jest --watch"
   },
   "dependencies": {
     "@radix-ui/react-dropdown-menu": "2.1.4",
@@ -61,7 +60,7 @@
     "tailwindcss": "3.4.1",
     "ts-jest": "29.2.5",
     "ts-node": "10.9.2",
-    "typescript": "5"
+    "typescript": "^5.7.3"
   },
   "type": "module",
   "lint-staged": {
