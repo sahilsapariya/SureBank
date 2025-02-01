@@ -43,10 +43,5 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# config files
-tailwind.config.ts
-eslint.config.mjs
-tsconfig.json
-
 # Visual Studio Code
 .vscode
