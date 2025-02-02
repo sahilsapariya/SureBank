@@ -1,13 +1,9 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Lexend } from "next/font/google";
 import { ReactNode } from "react";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+// Importing Lexend font
+const lexend = Lexend({
+  variable: "--font-lexend",
   subsets: ["latin"],
 });
 
@@ -17,7 +13,8 @@ interface FontProviderProps {
 
 export function FontProvider({ children }: FontProviderProps) {
   return (
-    <div className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+    // Applying Lexend font variable and keeping antialiased for better font rendering
+    <div className={`${lexend.className} antialiased`}>
       {children}
     </div>
   );
