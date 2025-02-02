@@ -18,7 +18,7 @@ const Hero = () => {
         <p className="font-light">
           At SureBank, our mission is to provide comprehensive banking solutions that empower
           individuals and businesses to achieve their financial goals. We are committed to
-          delivering personalized and innovative services that prioritize our customers' needs.
+          delivering personalized and innovative services that prioritize our customers&apos; needs.
         </p>
 
         <button className="btn-primary text-sm w-fit">Open Account</button>
