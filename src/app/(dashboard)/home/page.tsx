@@ -1,11 +1,12 @@
-import React from 'react'
+import Hero from '@surebank/components/home/Hero';
+import React from 'react';
 
 const Home = () => {
   return (
-    <div>
+    <>
+      <Hero />
+    </>
+  );
+};
 
-    </div>
-  )
-}
-
-export default Home
+export default Home;
