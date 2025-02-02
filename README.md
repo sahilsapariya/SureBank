@@ -1,6 +1,6 @@
-# surebank Frontend Repository
+# SureBank Repository
 
-Welcome to the surebank frontend repository! This guide will help you set up the project on your local machine and provide tips on how to proceed after setup.
+Welcome to the SureBank repository! This guide will help you set up the project on your local machine and provide tips on how to proceed after setup.
 
 ---
 
@@ -22,13 +22,13 @@ Follow these steps to clone and set up the repository locally:
 1. **Clone the Repository**:
 
    ```bash
-   git clone https://github.com/JeavioLLC/surebank-frontend.git
+   git clone https://github.com/sahilsapariya/surebank.git
    ```
 
 2. **Navigate to the Project Directory**:
 
    ```bash
-   cd surebank-frontend
+   cd surebank
    ```
 
 3. **Install Dependencies**:

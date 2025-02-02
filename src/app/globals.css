@@ -70,7 +70,7 @@
   }
 
   .btn-primary {
-    @apply bg-[#CAFF33] text-[#1A1A1A] py-2 px-4 rounded-full;
+    @apply bg-[#CAFF33] text-[#1A1A1A] py-2 px-4 rounded-full cursor-pointer;
   }
   .btn-primary:hover {
     @apply bg-[#b7eb26];

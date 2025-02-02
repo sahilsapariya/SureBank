@@ -2,11 +2,11 @@
 
 'use client';
 import Link from 'next/link';
-import { usePathname } from 'next/navigation'; // Import usePathname instead
+import { usePathname } from 'next/navigation';
 import React from 'react';
 
 const Navbar = () => {
-  const pathname = usePathname(); // Get the current path
+  const pathname = usePathname();
 
   return (
     <nav className="flex-center gap-5">
