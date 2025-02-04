@@ -4,7 +4,7 @@ import { Button } from '@surebank/components/ui/button';
 
 const Hero = () => {
   return (
-    <div className="flex flex-col lg:flex-center lg:flex-row lg:flex-between py-10">
+    <div className="flex flex-col lg:flex-center lg:flex-row lg:flex-between py-10 lg:pt-0">
       {/* left side  */}
       <div className="flex-center text-center lg:text-start lg:items-start flex-col  w-full lg:w-1/2 gap-5">
         <span className="btn-secondary flex-center gap-2 w-fit">
@@ -60,16 +60,16 @@ const Hero = () => {
                   },
                   {
                     id: 2,
-                    name: 'Joel Kenely',
-                    amount: '-$68.00',
+                    name: 'Mark Smith',
+                    amount: '-$55.00',
                     opacity: 'opacity-75',
                     zIndex: 'z-20',
                     scale: 'scale-90',
                   },
                   {
                     id: 3,
-                    name: 'Joel Kenely',
-                    amount: '-$68.00',
+                    name: 'Lenen Roy',
+                    amount: '-$30.00',
                     opacity: 'opacity-50',
                     zIndex: 'z-10',
                     scale: 'scale-75',
