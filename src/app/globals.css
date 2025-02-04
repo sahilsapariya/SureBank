@@ -21,22 +21,22 @@
 
 
   .h1 {
-    @apply text-5xl font-bold;
+    @apply text-5xl font-medium;
   }
   .h2 {
-    @apply text-4xl font-bold;
+    @apply text-4xl font-medium;
   }
   .h3 {
-    @apply text-3xl font-bold;
+    @apply text-3xl font-medium;
   }
   .h4 {
-    @apply text-2xl font-bold;
+    @apply text-2xl font-medium;
   }
   .h5 {
-    @apply text-xl font-bold;
+    @apply text-xl font-medium;
   }
   .h6 {
-    @apply text-lg font-bold;
+    @apply text-lg font-medium;
   }
   .p {
     @apply text-base;
