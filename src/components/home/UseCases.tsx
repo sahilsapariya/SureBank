@@ -4,7 +4,7 @@ import { Button } from '@surebank/components/ui/button';
 
 const UseCases = () => {
   return (
-    <div className="py-5">
+    <section className="py-5">
       <div className="flex flex-col gap-5 text-center lg:text-start">
         {/* Title */}
         <div className="h2 neon">Use Cases</div>
@@ -220,7 +220,7 @@ const UseCases = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

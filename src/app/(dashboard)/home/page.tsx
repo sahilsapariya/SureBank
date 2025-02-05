@@ -1,3 +1,5 @@
+import CTA from '@surebank/components/common/CTA';
+import Features from '@surebank/components/home/Features';
 import Hero from '@surebank/components/home/Hero';
 import Products from '@surebank/components/home/Products';
 import UseCases from '@surebank/components/home/UseCases';
@@ -9,6 +11,8 @@ const Home = () => {
       <Hero />
       <Products />
       <UseCases />
+      <Features />
+      <CTA />
     </>
   );
 };

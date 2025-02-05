@@ -10,15 +10,12 @@
     @apply bg-[#1A1A1A] text-[#FFFFFF];
   }
 
-
   .neon {
     @apply text-[#CAFF33];
   }
   .neon-bg {
     @apply bg-[#CAFF33] text-black;
   }
-
-
 
   .h1 {
     @apply text-5xl font-medium;
@@ -42,11 +39,9 @@
     @apply text-base;
   }
 
-
   .text-white {
     @apply text-[#FFFFFF];
   }
-
 
   .flex-center {
     @apply flex items-center justify-center;
@@ -61,12 +56,11 @@
     @apply flex justify-between;
   }
 
-
   .container {
     @apply mx-auto px-4;
   }
   .max-container {
-    @apply mx-auto px-4 max-w-[1200px];
+    @apply mx-auto lg:px-20 px-4 max-w-[1444px];
   }
 
   .btn-primary {
@@ -76,9 +70,19 @@
     @apply bg-[#b7eb26];
   }
   .btn-secondary {
-    @apply bg-[#262626] py-2 px-4 rounded-full text-white;
+    @apply py-3 px-4 rounded-full text-white border border-[#262626];
   }
   .active {
     @apply bg-[#262626] py-2 px-4 rounded-full;
   }
+}
+
+/* Hide scroll bar */
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-none {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }

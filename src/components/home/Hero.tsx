@@ -4,7 +4,7 @@ import { Button } from '@surebank/components/ui/button';
 
 const Hero = () => {
   return (
-    <div className="flex flex-col lg:flex-center lg:flex-row lg:flex-between py-10 lg:pt-0">
+    <section className="flex flex-col lg:flex-center lg:flex-row lg:flex-between py-10 lg:pt-0">
       {/* left side  */}
       <div className="flex-center text-center lg:text-start lg:items-start flex-col  w-full lg:w-1/2 gap-5">
         <span className="btn-secondary flex-center gap-2 w-fit">
@@ -174,7 +174,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

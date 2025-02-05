@@ -8,7 +8,7 @@ const Products = () => {
   const [selected, setSelected] = useState('individuals');
 
   return (
-    <div className="max-container py-5">
+    <section className="py-5">
       <div className="flex flex-col gap-5 text-center lg:text-start">
         {/* Title */}
         <div className="h2">
@@ -27,7 +27,7 @@ const Products = () => {
         {/* Products or Features */}
         {selected === 'individuals' ? <IndividualProducts /> : <BusinessProducts />}
       </div>
-    </div>
+    </section>
   );
 };
 
