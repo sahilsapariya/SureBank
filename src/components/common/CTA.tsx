@@ -12,7 +12,7 @@ const CTA = () => {
         className="absolute z-10 top-0 left-0"
       />
 
-      <div className="flex flex-col lg:flex-row text-center lg:flex-between items-center gap-10 lg:gap-20">
+      <div className="flex flex-col lg:flex-row text-center lg:text-start lg:flex-between items-center gap-10 lg:gap-20">
         <div className="flex flex-col gap-5 z-20">
           <h3 className="h3">
             Start your financial journey with&nbsp;

@@ -19,8 +19,8 @@ const Features = () => {
 
         {/* Content  */}
         <div className="flex flex-col md:flex-row gap-4 overflow-hidden my-8">
-          <div className="w-full mx-auto md:mx-0 h-fit p-5 bg-[#1C1C1C] rounded-xl overflow-x-scroll scrollbar-none">
-            <div className=" flex md:flex-col w-full gap-4">
+          <div className="md:max-w-56 w-full mx-auto md:mx-0 h-fit p-5 bg-[#1C1C1C] rounded-xl overflow-x-scroll scrollbar-none">
+            <div className="flex md:flex-col w-full gap-4">
               <button className="btn-secondary text-[#CAFF33] text-sm whitespace-nowrap">
                 Online Banking
               </button>
