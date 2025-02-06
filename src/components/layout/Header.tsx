@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import Navbar from './Navbar';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 interface Props {
   toggleMobileMenu: () => void;
@@ -11,6 +12,7 @@ interface Props {
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const pathname = usePathname();
 
   const toggleMobileMenu: () => void = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -28,18 +30,21 @@ const Header = () => {
           <span className="h5 sm:h4">SureBank</span>
         </div>
 
-        <div className="hidden md:block">
+        <div className="hidden md:flex">
           <Navbar />
         </div>
 
-        <div className="hidden md:block">
-          <nav className="flex-center gap-5">
-            <Link href="/register">Sign Up</Link>
-            <Link href="/login" className="btn-primary">
-              Login
-            </Link>
-          </nav>
-        </div>
+        <nav className="flex-center gap-5 hidden md:flex">
+          <Link
+            href="/auth/register"
+            className={pathname === '/auth/register' ? 'btn-primary' : ''}
+          >
+            Sign Up
+          </Link>
+          <Link href="/auth/login" className={pathname !== '/auth/register'  ? 'btn-primary' : ''}>
+            Login
+          </Link>
+        </nav>
 
         <div className="block md:hidden">
           <div className="btn-primary p-3 px-5" onClick={toggleMobileMenu}>
@@ -82,11 +87,12 @@ const MobileHeader: React.FC<Props> = ({ toggleMobileMenu }) => {
             Security
           </Link>
         </div>
+
         <nav className="flex gap-5">
-          <Link href="/register" className="btn-secondary">
+          <Link href="/auth/register" className="btn-secondary">
             Sign Up
           </Link>
-          <Link href="/login" className="btn-secondary">
+          <Link href="/auth/login" className="btn-secondary">
             Login
           </Link>
         </nav>
