@@ -13,7 +13,7 @@ const Navbar = () => {
       <Link href="/home" className={pathname === '/home' ? 'active' : ''}>
         Home
       </Link>
-      <Link href="/contact" className={pathname === '/contact' ? 'active' : ''}>
+      <Link href="/careers" className={pathname === '/careers' ? 'active' : ''}>
         Careers
       </Link>
       <Link href="/about" className={pathname === '/about' ? 'active' : ''}>

@@ -72,8 +72,8 @@ const MobileHeader: React.FC<Props> = ({ toggleMobileMenu }) => {
           <Link href={'/home'} className="h1 w-fit">
             Home
           </Link>
-          <Link href={'/career'} className="h1 w-fit">
-            Career
+          <Link href={'/careers'} className="h1 w-fit">
+            Careers
           </Link>
           <Link href={'/about'} className="h1 w-fit">
             About
