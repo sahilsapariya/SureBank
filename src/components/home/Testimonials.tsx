@@ -9,42 +9,42 @@ const Testimonials = () => {
     {
       id: 1,
       feedback:
-        'YourBank has been my trusted financial partner for years. Their personalized service and innovative digital banking solutions have made managing my finances a breeze.',
+        'SureBank has been my trusted financial partner for years. Their personalized service and innovative digital banking solutions have made managing my finances a breeze.',
       name: 'Sara T',
       type: 'individuals',
     },
     {
       id: 2,
       feedback:
-        'I recently applied for a loan with YourBank and was impressed by the quick approval process and competitive rates. I would highly recommend YourBank to anyone in need of financial assistance.',
+        'I recently applied for a loan with SureBank and was impressed by the quick approval process and competitive rates. I would highly recommend SureBank to anyone in need of financial assistance.',
       name: 'John D',
       type: 'individuals',
     },
     {
       id: 3,
       feedback:
-        "YourBank's online banking platform is user-friendly and secure. I can easily manage my accounts, pay bills, and transfer funds from anywhere, at any time. It's convenient and reliable.",
+        "SureBank's online banking platform is user-friendly and secure. I can easily manage my accounts, pay bills, and transfer funds from anywhere, at any time. It's convenient and reliable.",
       name: 'Emily G',
       type: 'individuals',
     },
     {
       id: 4,
       feedback:
-        'As a small business owner, I rely on YourBank for all my banking needs. Their business accounts and lending services have helped me grow my business and achieve my financial goals.',
+        'As a small business owner, I rely on SureBank for all my banking needs. Their business accounts and lending services have helped me grow my business and achieve my financial goals.',
       name: 'Mark S',
       type: 'business',
     },
     {
       id: 5,
       feedback:
-        'YourBank has been my trusted financial partner for years. Their personalized service and innovative digital banking solutions have made managing my finances a breeze.',
+        'SureBank has been my trusted financial partner for years. Their personalized service and innovative digital banking solutions have made managing my finances a breeze.',
       name: 'Sara T',
       type: 'business',
     },
     {
       id: 6,
       feedback:
-        'I recently applied for a loan with YourBank and was impressed by the quick approval process and competitive rates. I would highly recommend YourBank to anyone in need of financial assistance.',
+        'I recently applied for a loan with SureBank and was impressed by the quick approval process and competitive rates. I would highly recommend SureBank to anyone in need of financial assistance.',
       name: 'John D',
       type: 'business',
     },
@@ -62,7 +62,7 @@ const Testimonials = () => {
         {/* Description */}
         <div className="flex-col gap-5 lg:flex-row lg:flex-between lg:gap-32 flex-center">
           <p className="text-[#B3B3B3] font-light">
-            Discover how YourBank has transformed lives with innovative digital solutions and
+            Discover how SureBank has transformed lives with innovative digital solutions and
             personalized customer service. See why our clients trust us for a secure and prosperous
             financial journey
           </p>

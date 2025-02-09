@@ -18,7 +18,7 @@ const CareersHeroSection = () => {
           Welcome to <span className="neon">SureBank</span> Careers!
         </h1>
         <p className="text-sm xl:text-base text-[#B3B3B3] font-light">
-          Join our team and embark on a rewarding journey in the banking industry. At YourBank, we
+          Join our team and embark on a rewarding journey in the banking industry. At SureBank, we
           are committed to fostering a culture of excellence and providing opportunities for
           professional growth. With a focus on innovation, customer service, and integrity, we
           strive to make a positive impact in the lives of our customers and communities. Join us
