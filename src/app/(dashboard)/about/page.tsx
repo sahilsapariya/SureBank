@@ -1,9 +1,10 @@
+import AboutHeroSection from '@surebank/components/about/Hero'
 import React from 'react'
 
 const About = () => {
   return (
     <>
-        About - work in progress
+        <AboutHeroSection />
     </>
   )
 }
