@@ -13,7 +13,7 @@ const CareersHeroSection = () => {
           className="w-full h-full"
         />
       </div>
-      <div className="lg:absolute top-12 left-12 z-20 lg:w-[55%] w-full -mt-5 bg-[#1A1A1A] sm:p-10 p-5 flex flex-col gap-5 rounded-l-xl lg:rounded-tr-none rounded-xl lg:rounded-br-[60px]">
+      <div className="lg:absolute top-12 left-12 z-20 lg:w-[55%] w-full -mt-5 lg:mt-0 bg-[#1A1A1A] sm:p-10 p-5 flex flex-col gap-5 rounded-l-xl lg:rounded-tr-none rounded-xl lg:rounded-br-[60px]">
         <h1 className="h3 sm:h2 xl:h1">
           Welcome to <span className="neon">SureBank</span> Careers!
         </h1>
