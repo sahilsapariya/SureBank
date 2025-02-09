@@ -1,12 +1,14 @@
-import FAQs from '@surebank/components/common/FAQs'
-import React from 'react'
+import FAQs from '@surebank/components/common/FAQs';
+import SecurityHeroSection from '@surebank/components/security/Hero';
+import React from 'react';
 
 const Security = () => {
   return (
     <>
-        <FAQs />
+      <SecurityHeroSection />
+      <FAQs />
     </>
-  )
-}
+  );
+};
 
-export default Security
+export default Security;
