@@ -27,8 +27,20 @@ const Hero = () => {
 
       {/* right side  */}
 
-      <div className="mb-10 mt-20 w-full lg:w-1/2 flex-center flex-col gap-5 px-5">
-        <div className="relative border border-[#506816] min-w-80 w-full max-w-96 rounded-xl sm:py-8 py-6 sm:px-5 px-3 pb-5">
+      <div className="relative mb-10 mt-20 w-full lg:w-1/2 flex-center flex-col gap-5 px-5">
+        {/* top right bg - arrows */}
+
+        <div className="absolute -z-30 -top-6 sm:-top-8 md:-top-4 -right-6 sm:right-5 md:right-4 w-1/2">
+          <Image
+            src={'/home-arrows.svg'}
+            className="w-full"
+            alt="arrows"
+            width={300}
+            height={300}
+          />
+        </div>
+
+        <div className="bg-[#1A1A1A] relative border border-[#506816] min-w-80 w-full max-w-96 rounded-xl sm:py-8 py-6 sm:px-5 px-3 pb-5">
           {/* top left box (monthly credit) */}
           <div className="absolute z-40 top-[-30px] sm:left-[-60px] left-[-30px] flex-center sm:gap-3 gap-2 py-2 sm:px-4 px-3 bg-[#22251B] rounded-xl">
             <Image

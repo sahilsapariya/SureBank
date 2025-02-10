@@ -27,7 +27,7 @@ const Header = () => {
       )}
 
       {/* Desktop Header */}
-      <header className="w-full bg-[#1C1C1C] border-[#262626] border rounded-full px-7 py-5 flex-between my-5 z-30">
+      <header className="w-full bg-[#1C1C1C] border-[#262626] border rounded-full px-7 py-5 flex-between my-8 z-30">
         <div className="flex-center gap-4">
           <Image src="/icons/logo.svg" width={28} height={28} alt="logo" />
           <span className="h5 sm:h4">SureBank</span>
@@ -106,10 +106,18 @@ const MobileHeader: React.FC<Props> = ({ toggleMobileMenu, isMenuOpen }) => {
         </div>
 
         <nav className="flex gap-5">
-          <Link href="/auth/register" className="btn-secondary bg-slate-900" onClick={toggleMobileMenu}>
+          <Link
+            href="/auth/register"
+            className="btn-secondary bg-slate-900"
+            onClick={toggleMobileMenu}
+          >
             Sign Up
           </Link>
-          <Link href="/auth/login" className="btn-secondary bg-slate-900" onClick={toggleMobileMenu}>
+          <Link
+            href="/auth/login"
+            className="btn-secondary bg-slate-900"
+            onClick={toggleMobileMenu}
+          >
             Login
           </Link>
         </nav>
