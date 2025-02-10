@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 import Navbar from './Navbar';
 import Link from 'next/link';
@@ -8,6 +8,7 @@ import { usePathname } from 'next/navigation';
 
 interface Props {
   toggleMobileMenu: () => void;
+  isMenuOpen: boolean;
 }
 
 const Header = () => {
@@ -21,7 +22,9 @@ const Header = () => {
   return (
     <div className="max-container w-full">
       {/* Mobile Header */}
-      {isMobileMenuOpen && <MobileHeader toggleMobileMenu={toggleMobileMenu} />}
+      {isMobileMenuOpen && (
+        <MobileHeader toggleMobileMenu={toggleMobileMenu} isMenuOpen={isMobileMenuOpen} />
+      )}
 
       {/* Desktop Header */}
       <header className="w-full bg-[#1C1C1C] border-[#262626] border rounded-full px-7 py-5 flex-between my-5 z-30">
@@ -41,7 +44,7 @@ const Header = () => {
           >
             Sign Up
           </Link>
-          <Link href="/auth/login" className={pathname !== '/auth/register'  ? 'btn-primary' : ''}>
+          <Link href="/auth/login" className={pathname !== '/auth/register' ? 'btn-primary' : ''}>
             Login
           </Link>
         </nav>
@@ -56,9 +59,23 @@ const Header = () => {
   );
 };
 
-const MobileHeader: React.FC<Props> = ({ toggleMobileMenu }) => {
+const MobileHeader: React.FC<Props> = ({ toggleMobileMenu, isMenuOpen }) => {
+  useEffect(() => {
+    if (isMenuOpen) {
+      // Disable scrolling
+      document.body.style.overflow = 'hidden';
+    } else {
+      // Enable scrolling
+      document.body.style.overflow = 'auto';
+    }
+
+    // Cleanup when component unmounts
+    return () => {
+      document.body.style.overflow = 'auto';
+    };
+  }, [isMenuOpen]);
   return (
-    <div className="absolute neon-bg top-0 left-0 h-screen p-10 w-full z-10">
+    <div className="absolute neon-bg top-0 left-0 h-screen p-10 w-full z-50">
       {/* close button  */}
       <div className="absolute top-12 right-16">
         <Image
@@ -74,25 +91,25 @@ const MobileHeader: React.FC<Props> = ({ toggleMobileMenu }) => {
       {/* nav links */}
       <nav className="flex-between flex-col my-16 h-full max-h-96">
         <div className="flex flex-col gap-4">
-          <Link href={'/home'} className="h1 w-fit">
+          <Link href={'/home'} className="h1 w-fit" onClick={toggleMobileMenu}>
             Home
           </Link>
-          <Link href={'/careers'} className="h1 w-fit">
+          <Link href={'/careers'} className="h1 w-fit" onClick={toggleMobileMenu}>
             Careers
           </Link>
-          <Link href={'/about'} className="h1 w-fit">
+          <Link href={'/about'} className="h1 w-fit" onClick={toggleMobileMenu}>
             About
           </Link>
-          <Link href={'/security'} className="h1 w-fit">
+          <Link href={'/security'} className="h1 w-fit" onClick={toggleMobileMenu}>
             Security
           </Link>
         </div>
 
         <nav className="flex gap-5">
-          <Link href="/auth/register" className="btn-secondary">
+          <Link href="/auth/register" className="btn-secondary bg-slate-900" onClick={toggleMobileMenu}>
             Sign Up
           </Link>
-          <Link href="/auth/login" className="btn-secondary">
+          <Link href="/auth/login" className="btn-secondary bg-slate-900" onClick={toggleMobileMenu}>
             Login
           </Link>
         </nav>

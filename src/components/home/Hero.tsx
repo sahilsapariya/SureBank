@@ -30,7 +30,7 @@ const Hero = () => {
       <div className="mb-10 mt-20 w-full lg:w-1/2 flex-center flex-col gap-5 px-5">
         <div className="relative border border-[#506816] min-w-80 w-full max-w-96 rounded-xl sm:py-8 py-6 sm:px-5 px-3 pb-5">
           {/* top left box (monthly credit) */}
-          <div className="absolute z-50 top-[-30px] sm:left-[-60px] left-[-30px] flex-center sm:gap-3 gap-2 py-2 sm:px-4 px-3 bg-[#22251B] rounded-xl">
+          <div className="absolute z-40 top-[-30px] sm:left-[-60px] left-[-30px] flex-center sm:gap-3 gap-2 py-2 sm:px-4 px-3 bg-[#22251B] rounded-xl">
             <Image
               src={'/icons/plus.svg'}
               className="neon-bg rounded-full p-2 sm:w-8 w-6"
