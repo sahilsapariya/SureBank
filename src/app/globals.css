@@ -7,10 +7,6 @@
     @apply bg-purple-700 text-white;
   }
 
-  .neon::selection {
-    @apply bg-black text-purple-700; 
-  }
-
   .subtract-shape {
     position: relative;
     border-radius: 50px 50px 20px 20px;
