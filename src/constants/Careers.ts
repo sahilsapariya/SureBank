@@ -76,7 +76,7 @@ export const BENEFITS = [
 // **************************************************** JOB DESCRIPTIONS ****************************************************
 
 export const JOB_DESCRIPTION =
-  'Explore exciting job openings at YourBank, where we value talent, innovation, and a passion for customer service. Join our team and be part of shaping a brighter future in the banking industry';
+  'Explore exciting job openings at SureBank, where we value talent, innovation, and a passion for customer service. Join our team and be part of shaping a brighter future in the banking industry';
 
 export const JOB_LIST = [
   {
@@ -85,7 +85,7 @@ export const JOB_LIST = [
     location: 'India',
     department: 'Retail Banking',
     description:
-      'As a Relationship Manager at YourBank, you will be responsible for developing and maintaining relationships with our valued customers. You will proactively identify their financial needs and offer tailored solutions to help them achieve their goals. We are seeking individuals with excellent communication skills, a strong sales acumen, and a passion for delivering exceptional customer service.',
+      'As a Relationship Manager at SureBank, you will be responsible for developing and maintaining relationships with our valued customers. You will proactively identify their financial needs and offer tailored solutions to help them achieve their goals. We are seeking individuals with excellent communication skills, a strong sales acumen, and a passion for delivering exceptional customer service.',
     requirements: [
       "Bachelor's degree in Business, Finance, or a related field",
       'Minimum of 3 years of experience in sales or relationship management in the banking industry',
@@ -100,7 +100,7 @@ export const JOB_LIST = [
     location: 'United States',
     department: 'Risk Management',
     description:
-      'As a Risk Analyst at YourBank, you will play a key role in identifying, assessing, and mitigating risks across the organization. You will analyze data, develop risk models, and provide insights to help the bank make informed decisions. We are looking for candidates with a strong analytical background, attention to detail, and the ability to work collaboratively with cross-functional teams.',
+      'As a Risk Analyst at SureBank, you will play a key role in identifying, assessing, and mitigating risks across the organization. You will analyze data, develop risk models, and provide insights to help the bank make informed decisions. We are looking for candidates with a strong analytical background, attention to detail, and the ability to work collaboratively with cross-functional teams.',
     requirements: [
       "Bachelor's degree in Mathematics, Statistics, Economics, or a related field",
       'Minimum of 2 years of experience in risk management or data analysis',
@@ -115,7 +115,7 @@ export const JOB_LIST = [
     location: 'Canada',
     department: 'Information Technology',
     description:
-      'As an IT Security Specialist at YourBank, you will be responsible for protecting the bank’s information systems and data assets from cyber threats. You will implement security measures, monitor network activity, and respond to incidents to ensure the confidentiality, integrity, and availability of our systems. We are seeking candidates with a strong technical background, knowledge of cybersecurity best practices, and a commitment to continuous learning and development.',
+      'As an IT Security Specialist at SureBank, you will be responsible for protecting the bank’s information systems and data assets from cyber threats. You will implement security measures, monitor network activity, and respond to incidents to ensure the confidentiality, integrity, and availability of our systems. We are seeking candidates with a strong technical background, knowledge of cybersecurity best practices, and a commitment to continuous learning and development.',
     requirements: [
       "Bachelor's degree in Computer Science, Information Technology, or a related field",
       'Minimum of 3 years of experience in IT security or cybersecurity',

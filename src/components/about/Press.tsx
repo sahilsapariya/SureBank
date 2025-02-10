@@ -11,7 +11,7 @@ const Press = () => {
 
         {/* Description */}
         <p className="text-[#B3B3B3] font-light max-w-5xl">
-          Stay updated with the latest happenings and exciting developments at YourBank through our
+          Stay updated with the latest happenings and exciting developments at SureBank through our
           press releases.
         </p>
       </div>

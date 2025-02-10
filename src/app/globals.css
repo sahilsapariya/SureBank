@@ -3,6 +3,14 @@
 @tailwind utilities;
 
 @layer base {
+  ::selection {
+    @apply bg-purple-700 text-white;
+  }
+
+  .neon::selection {
+    @apply bg-black text-purple-700; 
+  }
+
   .subtract-shape {
     position: relative;
     border-radius: 50px 50px 20px 20px;
@@ -27,7 +35,21 @@
       top: -20%;
     }
   }
+  html {
+    font-size: 100%;
+  }
 
+  @media (max-width: 1024px) {
+    html {
+      font-size: 95%;
+    }
+  }
+
+  @media (max-width: 768px) {
+    html {
+      font-size: 90%;
+    }
+  }
 
   * {
     @apply border-border;

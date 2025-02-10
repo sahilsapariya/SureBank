@@ -19,7 +19,7 @@ const AboutHeroSection = () => {
           Where Banking Meets<span className="neon"> Excellence!</span>
         </h1>
         <p className="text-sm xl:text-base text-[#B3B3B3] font-light">
-          At YourBank, we believe that banking should be more than just transactions. It should be
+          At SureBank, we believe that banking should be more than just transactions. It should be
           an experience that empowers individuals and businesses to thrive and reach their financial
           goals. As a trusted financial institution, we are committed to delivering exceptional
           banking services that go beyond expectations. With a focus on innovation, personalized
